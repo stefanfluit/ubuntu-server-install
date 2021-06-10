@@ -92,3 +92,5 @@ groupadd --system node_exporter
 useradd -s /sbin/nologin -r -g node_exporter node_exporter
 systemctl daemon-reload
 systemctl enable node_exporter --now
+rm -rf $(find $(pwd) -name 'node_exporter*.tar.gz')
+rm -rf $(find $(pwd) -name 'node_exporter*' -type d)
