@@ -2,7 +2,7 @@
 
 # Set Bash behaviour
 set -o errexit      #Exit on uncaught errors
-set -o pipefail 	#Fail pipe on first error
+#set -o pipefail 	#Fail pipe on first error
 
 if [ $(whoami) != 'root' ];then
 	printf "Run script with sudo or as root.\n"
